@@ -39,10 +39,11 @@ resource "aws_route_table_association" "public_assoc" {
   route_table_id = aws_route_table.public_rt.id
 }
 resource "aws_s3_bucket" "terraform_bucket" {
-  bucket        = "terraform-demo-bucket-assignment2"
+  bucket        = "terraform-demo-bucket-assignment3-sruthi1234"
   force_destroy = true
   tags = {
     Name        = "Terraform-S3-bucket"
     Environment = "Dev"
   }
+
 }
